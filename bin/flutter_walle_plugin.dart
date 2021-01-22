@@ -113,7 +113,7 @@ class BuildApk {
 
     if (item != null) {
       apkFile = File(item.path);
-      newApkFileName = path.join(channelDir.path, "xinlingzhaopin-" + path.basename(apkFile.path));
+      newApkFileName = path.join(channelDir.path, path.basename(apkFile.path));
 
       if (!channelDir.existsSync()) {
         channelDir.createSync();
